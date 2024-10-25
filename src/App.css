@@ -1,0 +1,142 @@
+main{
+  display: flex;
+  padding: 5rem 5rem;
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+}
+
+main form{
+  width: 45%;
+}
+
+main .outputs-container{
+  width: 45%;
+}
+
+.inputs-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.inputs-container .titll,.Category, .Amount{
+  position: relative;
+  
+}
+
+.titleErr, .catErr, .amoErr{
+  color: red;
+  position: absolute;
+}
+
+
+
+button{
+  outline: none;
+    border: none;
+    background: tomm;
+    background: tomato;
+    padding: 6px 3px;
+    margin-top: 2rem;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.inputs-container input, .inputs-container select{
+  width: 100%;
+  border: 1px solid gray;
+  padding: 5px 5px;
+  font-size: 15px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.outputs-container table , tr,td, th{
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: start;
+  padding: 2px 5px;
+  user-select: none;
+}
+
+
+.outputs-container table{
+  width: 100%;
+  font-size: 19px;
+  position: relative;
+  
+}
+.outputs-container select{
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 5px 5px ;
+  font-size: 18px;
+  font-weight: inherit;
+}
+
+
+td{
+  width: 10rem;
+  cursor: default;
+}
+
+#ttdd{
+  display: flex;
+  border: none;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.thh{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+i{
+  cursor: pointer;
+}
+
+#ttdd div{
+  cursor: pointer;
+}
+
+
+.right-click-menu{
+  display: inline-block;
+  border-collapse: collapse;
+  box-shadow: 1px 1px 10px 5px gray;
+  border: 1PX solid black;
+  border-radius: 5px;
+  position: absolute;
+  background-color: #e8f1f3;
+  z-index: 1;
+}
+.right-click-menu p{
+  margin: 5px;
+  padding: 3px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  background: rgb(172, 170, 170);
+
+}
+
+
+@media (max-width:1170px){
+  main{
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+  main form{
+    width: 90%;
+  }
+  
+  main .outputs-container{
+    width: 90%;
+  }
+}
